@@ -1,0 +1,27 @@
+---
+# metadata comes from data/metadata.js
+permalink: /comic/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.language }}">
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.description }}</subtitle>
+	<link href="{{ permalink | htmlBaseUrl(metadata.url) }}" rel="self"/>
+	<link href="{{ metadata.url | addPathPrefixToFullUrl }}"/>
+	<updated>{{ collections.comics | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>{{ metadata.url }}</id>
+	<author>
+		<name>{{ metadata.author.name }}</name>
+		<email>{{ metadata.author.email }}</email>
+	</author>
+	{% for page in collections.comics | reverse %}
+	{% set absolutePageUrl %}{{ page.url | htmlBaseUrl(metadata.url) }}{% endset %}
+	<entry>
+		<title>{{ page.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ page.date | dateToRfc3339 }}</updated>
+		<id>{{ absolutePageUrl }}</id>
+		<content type="html">{{ page.templateContent | transformWithHtmlBase(absolutePageUrl, page.url) }}</content>
+	</entry>
+	{% endfor %}
+</feed>

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ metadata.language }}">
 <head>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="{{ eleventy.generator }}">
+<link rel="alternate" href="/comic/atom.xml" type="application/atom+xml" title="{{ metadata.title }}">
 <link rel="stylesheet" href="/style.css">
 <title>{{ title }}</title>
+
+{% set blurb = content | truncate(500) %}
+<meta name="description" content="{{ description or blurb or metadata.description }}">
 
 </head>
 <body>

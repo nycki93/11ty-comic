@@ -1,16 +1,24 @@
-module.exports = function(eleventy) {
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
+module.exports = function(eleventyConfig) {
+    // official plugins
+    eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
     // copy all static files unchanged
-    eleventy.addPassthroughCopy({ 'static': '/' });
-    eleventy.addWatchTarget('static');
+    eleventyConfig.addPassthroughCopy({ 'static': '/' });
+    eleventyConfig.addWatchTarget('static');
 
     // custom formatting functions, in addition to those provided by nunjucks and eleventy
-    eleventy.addFilter('second', ([ _first, second ]) => second);
+    eleventyConfig.addFilter('second', ([ _first, second ]) => second);
 
     return {
         // directories to look for page content.
         dir: {
             input: 'pages',
             includes: '../includes',
+            data: '../data',
         },
 
         // use the nunjucks template library by default
