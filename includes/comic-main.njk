@@ -1,0 +1,14 @@
+---
+layout: base
+---
+<h1>COMIC INDEX</h1>
+
+{% set mainComic = collections.comics | first %}
+{{ mainComic.content | safe }}
+
+{% set nextComic = collections.comics | second %}
+{% if nextComic %}
+
+<a href="{{ nextComic.url }}">NEXT</a>
+
+{% endif %}

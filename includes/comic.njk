@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<h1>Comic Template</h1>
+
+{{ content | safe }}
+
+{% set prev = collections.comics | getPreviousCollectionItem %}
+{% set next = collections.comics | getNextCollectionItem %}
+
+{% if prev %}
+
+<a href="{{ prev.url }}">PREV</a>
+
+{% endif %} 
+{% if next %}
+
+<a href="{{ next.url }}">NEXT</a>
+
+{% endif %}
