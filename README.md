@@ -14,7 +14,8 @@ By nycki, 2024.
 ## Usage
 
 - In your command prompt, type `npm run start`. This will run the "start" script in _package.json_, which will compile the website and host it on <http://localhost:8080>.
-- Edit the code with the text editor of your choice! Changes should appear automatically. If they don't, go back to the command prompt, and type Ctrl-C to stop the program, then `npm run start` to start it again.
+- Edit the code with the text editor of your choice! The comic pages are under _pages/comic_.
+- Changes should appear automatically. If they don't, go back to the command prompt, and type Ctrl-C to stop the program, then `npm run start` to start it again.
 - When you're done making changes, stop the program and type `npm run build` to generate a finished copy of the website. It will appear in the _\_site_ folder.
 - Upload the contents of _\_site_ to the static file host of your choice!
 
