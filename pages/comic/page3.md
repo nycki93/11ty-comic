@@ -1,1 +1,4 @@
+---
+title: PAGE 3'S TITLE
+---
 PAGE 3'S CONTENT

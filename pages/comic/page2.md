@@ -1,1 +1,4 @@
+---
+title: THE TITLE OF PAGE 2
+---
 THE CONTENT OF PAGE 2
