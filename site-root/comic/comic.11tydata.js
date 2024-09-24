@@ -3,5 +3,5 @@
 
 module.exports = {
     tags: [ 'comics' ],
-    layout: 'comic',
+    layout: 'comic.njk',
 }

@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: base.njk
 title: hello world!
 ---
 Welcome to the main page!

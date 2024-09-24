@@ -14,8 +14,8 @@ module.exports = function(eleventyConfig) {
         // directories to look for page content.
         dir: {
             input: 'site-root',
-            includes: '../includes',
-            data: '../data',
+            includes: '../site-includes',
+            data: '../site-data',
         }
     }
 }
