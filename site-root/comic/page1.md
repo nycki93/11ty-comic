@@ -1,6 +1,6 @@
 ---
 title: PAGE 1 TITLE
 ---
-![an image of eggbug](/a/eggbug.png)
+![an image of eggbug](/img/eggbug.png)
 
 PAGE 1 CONTENT
