@@ -6,6 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
+    "build-github-pages": "eleventy --pathprefix 11ty-comic",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
