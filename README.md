@@ -1,6 +1,6 @@
 # 11ty-comic
 
-A minimal template for making a webcomic on a static website. Uses the [Eleventy](https://www.11ty.dev) engine. Heavily based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+A minimal template for making a webcomic on a static website. Uses the [Eleventy](https://www.11ty.dev) engine. Based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
 
 By nycki, 2024.
 
