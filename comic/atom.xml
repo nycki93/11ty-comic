@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>website title</title>
+	<subtitle>website description</subtitle>
+	<link href="https://example.com/11ty-comic/comic/atom.xml" rel="self"/>
+	<link href="https://example.com/11ty-comic/"/>
+	<updated>2024-09-25T20:49:53Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>Your Name Here</name>
+		<email>youremailaddress@example.com</email>
+	</author>
+	
+	
+	<entry>
+		<title>PAGE&#39;S TITLE THE FOURTH</title>
+		<link href=""/>
+		<updated>2024-09-25T20:49:53Z</updated>
+		<id>https://example.com/11ty-comic/comic/page4/</id>
+		<content type="html">&lt;p&gt;PAGE&#39;S CONTENT THE FOURTH&lt;/p&gt;
+</content>
+	</entry>
+	
+	
+	<entry>
+		<title>PAGE 3&#39;S TITLE</title>
+		<link href=""/>
+		<updated>2024-09-25T20:49:53Z</updated>
+		<id>https://example.com/11ty-comic/comic/page3/</id>
+		<content type="html">&lt;p&gt;PAGE 3&#39;S CONTENT&lt;/p&gt;
+</content>
+	</entry>
+	
+	
+	<entry>
+		<title>THE TITLE OF PAGE 2</title>
+		<link href=""/>
+		<updated>2024-09-25T20:49:53Z</updated>
+		<id>https://example.com/11ty-comic/comic/page2/</id>
+		<content type="html">&lt;p&gt;THE CONTENT OF PAGE 2&lt;/p&gt;
+</content>
+	</entry>
+	
+	
+	<entry>
+		<title>PAGE 1 TITLE</title>
+		<link href=""/>
+		<updated>2024-09-25T20:49:53Z</updated>
+		<id>https://example.com/11ty-comic/comic/page1/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https://example.com/11ty-comic/img/eggbug.png&quot; alt=&quot;an image of eggbug&quot;&gt;&lt;/p&gt;
+&lt;p&gt;PAGE 1 CONTENT&lt;/p&gt;
+</content>
+	</entry>
+	
+</feed>

@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+    max-width: 100ch;
+    margin: 0 auto;
+    padding: 0 1ch;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li + li::before {
+    content: ' | ';
+}
