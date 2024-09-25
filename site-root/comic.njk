@@ -7,7 +7,7 @@ permalink: /comic/index.html
 <p>This is the comic index! Here's all the pages so far.</p>
 
 <ol>
-{% for page in collections.comics %}
+{% for page in collections['comic-pages'] %}
     <li>
         <a href="{{ page.url }}">{{ page.data.title }}</a>
     </li>

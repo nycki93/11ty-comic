@@ -2,6 +2,6 @@
 // make them all use the same layout and tags.
 
 module.exports = {
-    tags: [ 'comics' ],
-    layout: 'comic.njk',
+    tags: [ 'comic-pages' ],
+    layout: 'comic-page.njk',
 }

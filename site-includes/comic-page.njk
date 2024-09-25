@@ -3,8 +3,8 @@ layout: base.njk
 ---
 {{ content | safe }}
 
-{% set prev = collections.comics | getPreviousCollectionItem %}
-{% set next = collections.comics | getNextCollectionItem %}
+{% set prev = collections['comic-pages'] | getPreviousCollectionItem %}
+{% set next = collections['comic-pages'] | getNextCollectionItem %}
 
 {% if prev %}
 
