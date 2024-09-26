@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 ---
+<%# this is a comic-page template using ejs %>
 <%- content %>
 <%
   const comicPages = collections['comic-pages'];
@@ -10,11 +11,11 @@ layout: base.njk
 %>
 <% if (prev) { %>
 
-<a href=${prev.url}>PREV</a>
+<a href="<%= prev.url %>">PREV</a>
 
 <% } %>
 <% if (next) { %>
 
-<a href=${next.url}>PREV</a>
+<a href="<%= next.url %>">NEXT</a>
 
 <% } %>
