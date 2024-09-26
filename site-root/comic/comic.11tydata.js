@@ -3,5 +3,5 @@
 
 module.exports = {
     tags: [ 'comic-pages' ],
-    layout: 'comic-page.njk',
+    layout: 'comic-page.ejs',
 }
