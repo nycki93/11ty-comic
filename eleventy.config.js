@@ -13,6 +13,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('site-root/**/*.css');
     eleventyConfig.addPassthroughCopy('site-root/img/*');
 
+    eleventyConfig.setEjsOptions({
+        outputFunctionName: 'print',
+    });
+
     return {
         // the input directory is relative to this file.
         // all other directories are relative to the input directory.

@@ -10,13 +10,6 @@ layout: base.njk
   const next = comicPages[index + 1];
 %>
 
-<% if (prev) { %>
+<%- prev && `<a href=${prev.url}>PREV</a>` %>
 
-<a href="<%= prev.url %>">PREV</a>
-
-<% } %> 
-<% if (next) { %>
-
-<a href="<%= next.url %>">NEXT</a>
-
-<% } %>
+<%- next && `<a href=${next.url}>NEXT</a>` %>
