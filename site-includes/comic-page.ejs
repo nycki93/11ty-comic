@@ -2,14 +2,19 @@
 layout: base.njk
 ---
 <%- content %>
-
 <%
   const comicPages = collections['comic-pages'];
   const index = comicPages.findIndex(c => c.url == page.url);
   const prev = comicPages[index - 1];
   const next = comicPages[index + 1];
 %>
+<% if (prev) { %>
 
-<%- prev && `<a href=${prev.url}>PREV</a>` %>
+<a href=${prev.url}>PREV</a>
 
-<%- next && `<a href=${next.url}>NEXT</a>` %>
+<% } %>
+<% if (next) { %>
+
+<a href=${next.url}>PREV</a>
+
+<% } %>
